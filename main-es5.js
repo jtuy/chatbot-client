@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"body\">\n<div class=\"content\"> \n   <h1>\n    Welcome to {{ title }}\n  </h1>\n  <div id=\"main\">\n    <div><input id=\"input\" type=\"text\" placeholder=\"Say something...\" autocomplete=\"off\" [(ngModel)]='message' (keyup.enter)=\"sendMessage()\"/></div>\n    <div *ngFor=\"let item of messageArray\">\n      <span>{{item.name}}: </span> {{item.message}}\n    </div>\n  </div>\n  \n</div>\n\n</div>\n"
+module.exports = "<div class=\"body\">\n<div class=\"content\"> \n   <h1>\n    Welcome {{ title }}!\n  </h1>\n  <div id=\"main\">\n    <div class=\"chatbox\">\n      <div *ngFor=\"let item of messageArray\">\n      <span>{{item.name}}: </span> {{item.message}}\n      </div>\n    </div>\n    <div><input id=\"input\" type=\"text\" placeholder=\"Please type your question\" autocomplete=\"off\" [(ngModel)]='message' (keyup.enter)=\"sendMessage()\"/></div>\n  </div>\n  \n</div>\n\n</div>\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "<div class=\"body\">\n<div class=\"content\"> \n   <h1>\n    W
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".body { \n\tcolor: #421; \n\tfont-weight: bold; \n\tfont-size: 18px; \n\tfont-family: \"Courier New\"; \n    background:rgb(223 247 229); \n    content: '';\n    background-image: url('Chatbot.png');\n    background-repeat: no-repeat; \n    opacity: 0.5;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n    position: absolute;\n    z-index: -1;\n}\n\n.content {\n\tmargin: auto;\n\twidth: 50%;\n\tpadding: 10px;\n}\n\n#main { \n\tposition: fixed; \n\ttop: 30%; \n\tright: 200px; \n\twidth: 400px; \n\tborder: 0px solid #421; \n\tpadding: 40px; \n}\n\n#main div { \n\tmargin: 10px; \n}\n\n#input { \n\tborder: 0; \n\tpadding: 5px; \n\tborder: 1px solid #421; \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxXQUFXO0NBQ1gsaUJBQWlCO0NBQ2pCLGVBQWU7Q0FDZiwwQkFBMEI7SUFDdkIsMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxvQ0FBOEM7SUFDOUMsNEJBQTRCO0lBQzVCLFlBQVk7SUFDWixNQUFNO0lBQ04sT0FBTztJQUNQLFNBQVM7SUFDVCxRQUFRO0lBQ1Isa0JBQWtCO0lBQ2xCLFdBQVc7QUFDZjs7QUFFQTtDQUNDLFlBQVk7Q0FDWixVQUFVO0NBQ1YsYUFBYTtBQUNkOztBQUVBO0NBQ0MsZUFBZTtDQUNmLFFBQVE7Q0FDUixZQUFZO0NBQ1osWUFBWTtDQUNaLHNCQUFzQjtDQUN0QixhQUFhO0FBQ2Q7O0FBQ0E7Q0FDQyxZQUFZO0FBQ2I7O0FBQ0E7Q0FDQyxTQUFTO0NBQ1QsWUFBWTtDQUNaLHNCQUFzQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJvZHkgeyBcblx0Y29sb3I6ICM0MjE7IFxuXHRmb250LXdlaWdodDogYm9sZDsgXG5cdGZvbnQtc2l6ZTogMThweDsgXG5cdGZvbnQtZmFtaWx5OiBcIkNvdXJpZXIgTmV3XCI7IFxuICAgIGJhY2tncm91bmQ6cmdiKDIyMyAyNDcgMjI5KTsgXG4gICAgY29udGVudDogJyc7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcuLi9hc3NldHMvQ2hhdGJvdC5wbmcnKTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyBcbiAgICBvcGFjaXR5OiAwLjU7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgYm90dG9tOiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB6LWluZGV4OiAtMTtcbn1cblxuLmNvbnRlbnQge1xuXHRtYXJnaW46IGF1dG87XG5cdHdpZHRoOiA1MCU7XG5cdHBhZGRpbmc6IDEwcHg7XG59XG5cbiNtYWluIHsgXG5cdHBvc2l0aW9uOiBmaXhlZDsgXG5cdHRvcDogMzAlOyBcblx0cmlnaHQ6IDIwMHB4OyBcblx0d2lkdGg6IDQwMHB4OyBcblx0Ym9yZGVyOiAwcHggc29saWQgIzQyMTsgXG5cdHBhZGRpbmc6IDQwcHg7IFxufVxuI21haW4gZGl2IHsgXG5cdG1hcmdpbjogMTBweDsgXG59IFxuI2lucHV0IHsgXG5cdGJvcmRlcjogMDsgXG5cdHBhZGRpbmc6IDVweDsgXG5cdGJvcmRlcjogMXB4IHNvbGlkICM0MjE7IFxufSJdfQ== */"
+module.exports = ".body { \n\tcolor: #421; \n\t/* font-weight: bold;  */\n\tfont-size: 18px; \n\tfont-family: \"Courier New\"; \n    /* background:rgb(223 247 229);  */\n    content: '';\n    /* background-image: url('../assets/Chatbot.png');\n    background-repeat: no-repeat;  */\n    opacity: 0.5;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n    position: absolute;\n    z-index: -1;\n}\n\n.content {\n\tmargin: auto;\n\twidth: 50%;\n\tpadding: 10px;\n}\n\n#main { \n\t/* position: fixed;  */\n\ttop: 30%; \n\tright: 200px; \n\twidth: 400px; \n\tborder: 0px solid #421; \n\t/* padding: 40px;  */\n}\n\n#main div { \n\tmargin: 10px; \n}\n\n#main div span { \n\tfont-weight: bold; \n}\n\n.chatbox { \n\theight: 600px; \n\twidth: 400px;\n\tborder: 1px solid #421; \n\toverflow:auto\n}\n\n#input { \n\tborder: 0; \n\tpadding: 5px; \n\tborder: 1px solid #421; \n\twidth: 390px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxXQUFXO0NBQ1gsd0JBQXdCO0NBQ3hCLGVBQWU7Q0FDZiwwQkFBMEI7SUFDdkIsa0NBQWtDO0lBQ2xDLFdBQVc7SUFDWDtvQ0FDZ0M7SUFDaEMsWUFBWTtJQUNaLE1BQU07SUFDTixPQUFPO0lBQ1AsU0FBUztJQUNULFFBQVE7SUFDUixrQkFBa0I7SUFDbEIsV0FBVztBQUNmOztBQUVBO0NBQ0MsWUFBWTtDQUNaLFVBQVU7Q0FDVixhQUFhO0FBQ2Q7O0FBRUE7Q0FDQyxzQkFBc0I7Q0FDdEIsUUFBUTtDQUNSLFlBQVk7Q0FDWixZQUFZO0NBQ1osc0JBQXNCO0NBQ3RCLG9CQUFvQjtBQUNyQjs7QUFDQTtDQUNDLFlBQVk7QUFDYjs7QUFDQTtDQUNDLGlCQUFpQjtBQUNsQjs7QUFDQTtDQUNDLGFBQWE7Q0FDYixZQUFZO0NBQ1osc0JBQXNCO0NBQ3RCO0FBQ0Q7O0FBQ0E7Q0FDQyxTQUFTO0NBQ1QsWUFBWTtDQUNaLHNCQUFzQjtDQUN0QixZQUFZO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ib2R5IHsgXG5cdGNvbG9yOiAjNDIxOyBcblx0LyogZm9udC13ZWlnaHQ6IGJvbGQ7ICAqL1xuXHRmb250LXNpemU6IDE4cHg7IFxuXHRmb250LWZhbWlseTogXCJDb3VyaWVyIE5ld1wiOyBcbiAgICAvKiBiYWNrZ3JvdW5kOnJnYigyMjMgMjQ3IDIyOSk7ICAqL1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIC8qIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL0NoYXRib3QucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgICovXG4gICAgb3BhY2l0eTogMC41O1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICByaWdodDogMDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogLTE7XG59XG5cbi5jb250ZW50IHtcblx0bWFyZ2luOiBhdXRvO1xuXHR3aWR0aDogNTAlO1xuXHRwYWRkaW5nOiAxMHB4O1xufVxuXG4jbWFpbiB7IFxuXHQvKiBwb3NpdGlvbjogZml4ZWQ7ICAqL1xuXHR0b3A6IDMwJTsgXG5cdHJpZ2h0OiAyMDBweDsgXG5cdHdpZHRoOiA0MDBweDsgXG5cdGJvcmRlcjogMHB4IHNvbGlkICM0MjE7IFxuXHQvKiBwYWRkaW5nOiA0MHB4OyAgKi9cbn1cbiNtYWluIGRpdiB7IFxuXHRtYXJnaW46IDEwcHg7IFxufSBcbiNtYWluIGRpdiBzcGFuIHsgXG5cdGZvbnQtd2VpZ2h0OiBib2xkOyBcbn0gXG4uY2hhdGJveCB7IFxuXHRoZWlnaHQ6IDYwMHB4OyBcblx0d2lkdGg6IDQwMHB4O1xuXHRib3JkZXI6IDFweCBzb2xpZCAjNDIxOyBcblx0b3ZlcmZsb3c6YXV0b1xufSBcbiNpbnB1dCB7IFxuXHRib3JkZXI6IDA7IFxuXHRwYWRkaW5nOiA1cHg7IFxuXHRib3JkZXI6IDFweCBzb2xpZCAjNDIxOyBcblx0d2lkdGg6IDM5MHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent(socketService) {
         this.socketService = socketService;
-        this.title = 'Simple Chatbot';
+        this.title = 'Daisy Barnes';
         this.messageArray = [];
         this.message = '';
         this.synth = window.speechSynthesis;
@@ -73,14 +73,14 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.socketService.receivedReply().subscribe(function (data) {
-            _this.messageArray.push({ name: 'bot', message: data.outputMessage });
+            _this.messageArray.push({ name: 'Chatbot', message: data.outputMessage });
             _this.speak(data.outputMessage);
         });
     };
     AppComponent.prototype.sendMessage = function () {
         var data = { message: this.message };
         this.socketService.sendMessage(data);
-        this.messageArray.push({ name: 'you', message: this.message });
+        this.messageArray.push({ name: 'Daisy', message: this.message });
         this.message = '';
     };
     AppComponent.prototype.speak = function (string) {
@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var SocketService = /** @class */ (function () {
     function SocketService() {
-        // private socket = io('http://localhost:8000');
+        // private socket = io('http://127.0.0.1:8000');
         this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3__('https://plaid-different-danger.glitch.me');
     }
     SocketService.prototype.sendMessage = function (data) {
@@ -264,7 +264,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/a09335/CODE/FHIR/chatbot-client/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/a09335/CODE/FHIR/chatbot-client-code/src/main.ts */"./src/main.ts");
 
 
 /***/ }),
