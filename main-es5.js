@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"body\">\n<div class=\"content\"> \n   <h1>\n    Welcome {{ title }}!\n  </h1>\n  <div id=\"main\">\n    <div class=\"chatbox\">\n      <div *ngFor=\"let item of messageArray\">\n      <span>{{item.name}}: </span> {{item.message}}\n      </div>\n    </div>\n    <div><input id=\"input\" type=\"text\" placeholder=\"Please type your question\" autocomplete=\"off\" [(ngModel)]='message' (keyup.enter)=\"sendMessage()\"/></div>\n  </div>\n  \n</div>\n\n</div>\n"
+module.exports = "<div class=\"body\">\n  <div class=\"content\"> \n     <h1>\n      Welcome to {{ title }}!\n    </h1>\n    <div id=\"main\">\n      <div class=\"chatbox\">\n        <div *ngFor=\"let item of messageArray\">\n        <span>{{item.name}}: </span> {{item.message}}\n        </div>\n      </div>\n      <div><input id=\"input\" type=\"text\" placeholder=\"Please type your question\" autocomplete=\"off\" [(ngModel)]='message' (keyup.enter)=\"sendMessage()\"/></div>\n    </div>\n    \n  </div>\n  \n  </div>\n  "
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "<div class=\"body\">\n<div class=\"content\"> \n   <h1>\n    W
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".body { \n\tcolor: #421; \n\t/* font-weight: bold;  */\n\tfont-size: 18px; \n\tfont-family: \"Courier New\"; \n    /* background:rgb(223 247 229);  */\n    content: '';\n    /* background-image: url('../assets/Chatbot.png');\n    background-repeat: no-repeat;  */\n    opacity: 0.5;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n    position: absolute;\n    z-index: -1;\n}\n\n.content {\n\tmargin: auto;\n\twidth: 50%;\n\tpadding: 10px;\n}\n\n#main { \n\t/* position: fixed;  */\n\ttop: 30%; \n\tright: 200px; \n\twidth: 400px; \n\tborder: 0px solid #421; \n\t/* padding: 40px;  */\n}\n\n#main div { \n\tmargin: 10px; \n}\n\n#main div span { \n\tfont-weight: bold; \n}\n\n.chatbox { \n\theight: 600px; \n\twidth: 400px;\n\tborder: 1px solid #421; \n\toverflow:auto\n}\n\n#input { \n\tborder: 0; \n\tpadding: 5px; \n\tborder: 1px solid #421; \n\twidth: 390px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxXQUFXO0NBQ1gsd0JBQXdCO0NBQ3hCLGVBQWU7Q0FDZiwwQkFBMEI7SUFDdkIsa0NBQWtDO0lBQ2xDLFdBQVc7SUFDWDtvQ0FDZ0M7SUFDaEMsWUFBWTtJQUNaLE1BQU07SUFDTixPQUFPO0lBQ1AsU0FBUztJQUNULFFBQVE7SUFDUixrQkFBa0I7SUFDbEIsV0FBVztBQUNmOztBQUVBO0NBQ0MsWUFBWTtDQUNaLFVBQVU7Q0FDVixhQUFhO0FBQ2Q7O0FBRUE7Q0FDQyxzQkFBc0I7Q0FDdEIsUUFBUTtDQUNSLFlBQVk7Q0FDWixZQUFZO0NBQ1osc0JBQXNCO0NBQ3RCLG9CQUFvQjtBQUNyQjs7QUFDQTtDQUNDLFlBQVk7QUFDYjs7QUFDQTtDQUNDLGlCQUFpQjtBQUNsQjs7QUFDQTtDQUNDLGFBQWE7Q0FDYixZQUFZO0NBQ1osc0JBQXNCO0NBQ3RCO0FBQ0Q7O0FBQ0E7Q0FDQyxTQUFTO0NBQ1QsWUFBWTtDQUNaLHNCQUFzQjtDQUN0QixZQUFZO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ib2R5IHsgXG5cdGNvbG9yOiAjNDIxOyBcblx0LyogZm9udC13ZWlnaHQ6IGJvbGQ7ICAqL1xuXHRmb250LXNpemU6IDE4cHg7IFxuXHRmb250LWZhbWlseTogXCJDb3VyaWVyIE5ld1wiOyBcbiAgICAvKiBiYWNrZ3JvdW5kOnJnYigyMjMgMjQ3IDIyOSk7ICAqL1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIC8qIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL0NoYXRib3QucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgICovXG4gICAgb3BhY2l0eTogMC41O1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICByaWdodDogMDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogLTE7XG59XG5cbi5jb250ZW50IHtcblx0bWFyZ2luOiBhdXRvO1xuXHR3aWR0aDogNTAlO1xuXHRwYWRkaW5nOiAxMHB4O1xufVxuXG4jbWFpbiB7IFxuXHQvKiBwb3NpdGlvbjogZml4ZWQ7ICAqL1xuXHR0b3A6IDMwJTsgXG5cdHJpZ2h0OiAyMDBweDsgXG5cdHdpZHRoOiA0MDBweDsgXG5cdGJvcmRlcjogMHB4IHNvbGlkICM0MjE7IFxuXHQvKiBwYWRkaW5nOiA0MHB4OyAgKi9cbn1cbiNtYWluIGRpdiB7IFxuXHRtYXJnaW46IDEwcHg7IFxufSBcbiNtYWluIGRpdiBzcGFuIHsgXG5cdGZvbnQtd2VpZ2h0OiBib2xkOyBcbn0gXG4uY2hhdGJveCB7IFxuXHRoZWlnaHQ6IDYwMHB4OyBcblx0d2lkdGg6IDQwMHB4O1xuXHRib3JkZXI6IDFweCBzb2xpZCAjNDIxOyBcblx0b3ZlcmZsb3c6YXV0b1xufSBcbiNpbnB1dCB7IFxuXHRib3JkZXI6IDA7IFxuXHRwYWRkaW5nOiA1cHg7IFxuXHRib3JkZXI6IDFweCBzb2xpZCAjNDIxOyBcblx0d2lkdGg6IDM5MHB4O1xufSJdfQ== */"
+module.exports = ".body { \n\tcolor: #421; \n\t/* font-weight: bold;  */\n\tfont-size: 18px; \n\tfont-family: \"Courier New\"; \n    /* background:rgb(223 247 229);  */\n    content: '';\n    /* background-image: url('../assets/Chatbot.png');\n    background-repeat: no-repeat;  */\n    opacity: 0.5;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n    position: absolute;\n    z-index: -1;\n}\n\n.content {\n\tmargin: auto;\n\twidth: 50%;\n\tpadding: 10px;\n}\n\n#main { \n\t/* position: fixed;  */\n\ttop: 30%; \n\tright: 200px; \n\twidth: 400px; \n\tborder: 0px solid #421; \n\t/* padding: 40px;  */\n}\n\n#main div { \n\tmargin: 10px; \n\twhite-space: pre-wrap;\n}\n\n#main div span { \n\tfont-weight: bold; \n}\n\n.chatbox { \n\theight: 600px; \n\twidth: 400px;\n\tborder: 1px solid #421; \n\toverflow: auto;\n}\n\n#input { \n\tborder: 0; \n\tpadding: 5px; \n\tborder: 1px solid #421; \n\twidth: 390px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxXQUFXO0NBQ1gsd0JBQXdCO0NBQ3hCLGVBQWU7Q0FDZiwwQkFBMEI7SUFDdkIsa0NBQWtDO0lBQ2xDLFdBQVc7SUFDWDtvQ0FDZ0M7SUFDaEMsWUFBWTtJQUNaLE1BQU07SUFDTixPQUFPO0lBQ1AsU0FBUztJQUNULFFBQVE7SUFDUixrQkFBa0I7SUFDbEIsV0FBVztBQUNmOztBQUVBO0NBQ0MsWUFBWTtDQUNaLFVBQVU7Q0FDVixhQUFhO0FBQ2Q7O0FBRUE7Q0FDQyxzQkFBc0I7Q0FDdEIsUUFBUTtDQUNSLFlBQVk7Q0FDWixZQUFZO0NBQ1osc0JBQXNCO0NBQ3RCLG9CQUFvQjtBQUNyQjs7QUFDQTtDQUNDLFlBQVk7Q0FDWixxQkFBcUI7QUFDdEI7O0FBQ0E7Q0FDQyxpQkFBaUI7QUFDbEI7O0FBQ0E7Q0FDQyxhQUFhO0NBQ2IsWUFBWTtDQUNaLHNCQUFzQjtDQUN0QixjQUFjO0FBQ2Y7O0FBQUU7Q0FDRCxTQUFTO0NBQ1QsWUFBWTtDQUNaLHNCQUFzQjtDQUN0QixZQUFZO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ib2R5IHsgXG5cdGNvbG9yOiAjNDIxOyBcblx0LyogZm9udC13ZWlnaHQ6IGJvbGQ7ICAqL1xuXHRmb250LXNpemU6IDE4cHg7IFxuXHRmb250LWZhbWlseTogXCJDb3VyaWVyIE5ld1wiOyBcbiAgICAvKiBiYWNrZ3JvdW5kOnJnYigyMjMgMjQ3IDIyOSk7ICAqL1xuICAgIGNvbnRlbnQ6ICcnO1xuICAgIC8qIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vYXNzZXRzL0NoYXRib3QucG5nJyk7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDsgICovXG4gICAgb3BhY2l0eTogMC41O1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJvdHRvbTogMDtcbiAgICByaWdodDogMDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogLTE7XG59XG5cbi5jb250ZW50IHtcblx0bWFyZ2luOiBhdXRvO1xuXHR3aWR0aDogNTAlO1xuXHRwYWRkaW5nOiAxMHB4O1xufVxuXG4jbWFpbiB7IFxuXHQvKiBwb3NpdGlvbjogZml4ZWQ7ICAqL1xuXHR0b3A6IDMwJTsgXG5cdHJpZ2h0OiAyMDBweDsgXG5cdHdpZHRoOiA0MDBweDsgXG5cdGJvcmRlcjogMHB4IHNvbGlkICM0MjE7IFxuXHQvKiBwYWRkaW5nOiA0MHB4OyAgKi9cbn1cbiNtYWluIGRpdiB7IFxuXHRtYXJnaW46IDEwcHg7IFxuXHR3aGl0ZS1zcGFjZTogcHJlLXdyYXA7XG59IFxuI21haW4gZGl2IHNwYW4geyBcblx0Zm9udC13ZWlnaHQ6IGJvbGQ7IFxufSBcbi5jaGF0Ym94IHsgXG5cdGhlaWdodDogNjAwcHg7IFxuXHR3aWR0aDogNDAwcHg7XG5cdGJvcmRlcjogMXB4IHNvbGlkICM0MjE7IFxuXHRvdmVyZmxvdzogYXV0bztcbn0gI2lucHV0IHsgXG5cdGJvcmRlcjogMDsgXG5cdHBhZGRpbmc6IDVweDsgXG5cdGJvcmRlcjogMXB4IHNvbGlkICM0MjE7IFxuXHR3aWR0aDogMzkwcHg7XG59Il19 */"
 
 /***/ }),
 
@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent(socketService) {
         this.socketService = socketService;
-        this.title = 'Daisy Barnes';
+        this.title = 'Chatbot';
         this.messageArray = [];
         this.message = '';
         this.synth = window.speechSynthesis;
@@ -76,11 +76,14 @@ var AppComponent = /** @class */ (function () {
             _this.messageArray.push({ name: 'Chatbot', message: data.outputMessage });
             _this.speak(data.outputMessage);
         });
+        var outputMessage = "Hi Cynthia, I'm your health care spending navigator. I can provide you with information about your claims. You can ask me like... \nShow my latest claims \nShow my claims with provider FiveLakesHealthSystem \nShow my claim details on 2020-12-18";
+        this.messageArray.push({ name: 'Chatbot', message: outputMessage });
+        this.speak(outputMessage);
     };
     AppComponent.prototype.sendMessage = function () {
-        var data = { message: this.message };
+        var data = { patientId: "3516", message: this.message };
         this.socketService.sendMessage(data);
-        this.messageArray.push({ name: 'Daisy', message: this.message });
+        this.messageArray.push({ name: 'Cynthia', message: this.message });
         this.message = '';
     };
     AppComponent.prototype.speak = function (string) {
@@ -174,8 +177,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var SocketService = /** @class */ (function () {
+    // private socket = io('http://127.0.0.1:8000');
     function SocketService() {
-        // private socket = io('http://127.0.0.1:8000');
         this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3__('https://plaid-different-danger.glitch.me');
     }
     SocketService.prototype.sendMessage = function (data) {
