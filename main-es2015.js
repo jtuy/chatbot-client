@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"body\">\n  <div class=\"content\"> \n     <h1>\n      Welcome to {{ title }}!\n    </h1>\n    <div id=\"main\">\n      <div class=\"chatbox\">\n        <div *ngFor=\"let item of messageArray\">\n        <span>{{item.name}}: </span> {{item.message}}\n        </div>\n      </div>\n      <div><input id=\"input\" type=\"text\" placeholder=\"Please type your question\" autocomplete=\"off\" [(ngModel)]='message' (keyup.enter)=\"sendMessage()\"/></div>\n    </div>\n    \n  </div>\n  \n  </div>\n  "
+module.exports = "<div class=\"body\">\n  <div class=\"content\"> \n     <h1>\n      Welcome to {{ title }}!\n    </h1>\n    <div id=\"main\">\n      <div class=\"chatbox\" #scrollMe>\n        <div *ngFor=\"let item of messageArray\">\n        <span>{{item.name}}: </span> {{item.message}}\n        </div>\n      </div>\n      <div><input id=\"input\" type=\"text\" placeholder=\"Please type your question\" autocomplete=\"off\" [(ngModel)]='message' (keyup.enter)=\"sendMessage()\"/></div>\n    </div>\n    \n  </div>\n  \n  </div>\n  "
 
 /***/ }),
 
@@ -75,9 +75,12 @@ let AppComponent = class AppComponent {
             this.messageArray.push({ name: 'Chatbot', message: data.outputMessage });
             this.speak(data.outputMessage);
         });
-        let outputMessage = "Hi Cynthia, I'm your health care spending navigator. I can provide you with information about your claims. You can ask me like... \nShow my latest claims \nShow my claims with provider FiveLakesHealthSystem \nShow my claim details on 2020-12-18";
+        let outputMessage = "Hi Cynthia, I'm your health care spending navigator. I can provide you with information about your claims. You can ask me like... \nShow my latest claims. \nShow my claims with provider FiveLakesHealthSystem. \nShow my claim details on 2020-12-18.";
         this.messageArray.push({ name: 'Chatbot', message: outputMessage });
         this.speak(outputMessage);
+    }
+    ngAfterViewChecked() {
+        this.scrollToBottom();
     }
     sendMessage() {
         const data = { patientId: "3516", message: this.message };
@@ -94,10 +97,19 @@ let AppComponent = class AppComponent {
         u.pitch = 1; //0-2 interval
         this.synth.speak(u);
     }
+    scrollToBottom() {
+        try {
+            this.myChatBox.nativeElement.scrollTop = this.myChatBox.nativeElement.scrollHeight;
+        }
+        catch (err) { }
+    }
 };
 AppComponent.ctorParameters = () => [
     { type: _socket_service__WEBPACK_IMPORTED_MODULE_2__["SocketService"] }
 ];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('scrollMe', { static: false })
+], AppComponent.prototype, "myChatBox", void 0);
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
